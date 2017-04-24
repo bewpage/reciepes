@@ -4,15 +4,9 @@ import { Router, Route, Link, IndexLink, IndexRoute, hashHistory} from 'react-ro
 import Template from './template.jsx';
 import Main from './main.jsx';
 import Submit from './submit.jsx';
+import Contact from './contact.jsx';
 
 document.addEventListener('DOMContentLoaded', function(){
-
-
-    class Contact extends React.Component {
-        render() {
-            return <h1>Contact us at contact@example.com</h1>;
-        }
-    }
 
     class NotFound extends React.Component {
         render() {
