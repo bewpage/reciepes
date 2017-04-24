@@ -19,18 +19,18 @@ import ListOfIngredients from './ingredients_list.jsx'
                             <img src={recipe.image} alt={recipe.name}/>
                             <div className="caption">
                                 <h3>{recipe.name}</h3>
+                                <div><ListOfIngredients recipe={recipe}/></div>
                                 <p>{recipe.description}</p>
-                                <p><ListOfIngredients recipe={recipe}/></p>
                             </div>
                         </div>
                     </div>)});
             return arrayRecipes;
-        }
+        };
 
         render(){
             return <div className="container">
                 <div className="row">
-                <h1>Home</h1>
+                    <h1>Twoje przepisy</h1>
                     <div>
                         {this.displayRecipes()}
                     </div>

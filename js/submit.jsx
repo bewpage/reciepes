@@ -16,7 +16,7 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
                 name:'',
                 description:'',
                 newRecipe:{
-                    name: 'costam',
+                    name: 'nazwa',
                     description:'opis',
                     image:'',
                     ingredients: [],
@@ -125,9 +125,9 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
                                    placeholder="Podaj nazwę przepisu"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="description">Opis potrawy</label>
+                            <label htmlFor="description">Sposób przygotowania:</label>
                             <textarea className="form-control"
-                                      placeholder="podaj krótki opis potrawy"
+                                      placeholder="podaj opis co trzeba zrobić..."
                                       value={this.state.description}
                                       onChange={event => this.handleAnyInputChange(event, 'description')}/>
                         </div>

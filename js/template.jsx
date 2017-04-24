@@ -8,22 +8,21 @@ export default class Template extends React.Component{
                 <nav className="navbar navbar-default">
                     <div className="container-fluid">
                         <div className="navbar-header">
-                            <button type="button"
-                                    className="navbar-toggle collapsed"
-                                    data-toggle="collapse"
+                            <button type="button" className="navbar-toggle collapsed"
                                     data-target="#navbar"
+                                    data-toggle="collapse"
                                     aria-expanded="false"
                                     aria-controls="navbar">
                                 <span className="sr-only">Toggle navigation</span>
-                                <span className="icon-bar">Home</span>
-                                <span className="icon-bar">Add Recipe</span>
-                                <span className="icon-bar">Contact</span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
                             </button>
-                            <Link className="navbar-brand" to="/">Project name</Link>
+                            <Link className="navbar-brand" to="/">MyCook Book</Link>
                         </div>
                         <div id="navbar" className="navbar-collapse collapse">
                             <ul className="nav navbar-nav">
-                                <li className="active"><Link to="/">Home</Link></li>
+                                <li><Link to="/">Home</Link></li>
                                 <li><Link to="/submit">Add Recipe</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>

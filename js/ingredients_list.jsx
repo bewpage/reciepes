@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Ingredients from './ingredients.jsx'
 
     export default class ListOfIngredients extends React.Component {
         displayList(){
