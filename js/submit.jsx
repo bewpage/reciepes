@@ -32,7 +32,7 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
             });
                 console.log(files[0]);
             this.handleImageUpload(files[0]);
-        }
+        };
 
         handleImageUpload = (file) => {
             let upload = request.post(CLOUDINARY_UPLOAD_URL)
@@ -50,7 +50,7 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
                     });
                 }
             });
-        }
+        };
 
 
         addHandleSubmitIngredients = (quantity, ingredient) => {
@@ -101,7 +101,7 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
             return <div className="container">
                 <div className="row">
                 <div className="col-xs-12 col-sm-8">
-                    <h1>Dodaj Przepis</h1>
+                    <h1 className="page-header">Dodaj Przepis</h1>
                     <form onSubmit={this.handleSubmit}>
                         <Dropzone
                             multiple={false}
@@ -141,8 +141,8 @@ const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/bewpage/upload';
                 </div>
         }
     }
-    class App extends React.Component {
-        render(){
-            return <Submit/>
-        }
-    }
+    // class App extends React.Component {
+    //     render(){
+    //         return <Submit/>
+    //     }
+    // }

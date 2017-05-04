@@ -30,7 +30,7 @@ import ListOfIngredients from './ingredients_list.jsx'
         render(){
             return <div className="container">
                 <div className="row">
-                    <h1>Moje przepisy</h1>
+                    <h1 className="page-header">Moje przepisy</h1>
                     <div>
                         {this.displayRecipes()}
                     </div>

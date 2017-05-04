@@ -22,9 +22,9 @@ export default class Template extends React.Component{
                         </div>
                         <div id="navbar" className="navbar-collapse collapse">
                             <ul className="nav navbar-nav">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/submit">Add Recipe</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li key="1"><Link to="/">Home</Link></li>
+                                <li key="2"><Link to="/submit">Add Recipe</Link></li>
+                                <li key="3"><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>{/*<--/.nav-collapse -->*/}
                     </div>{/*<--/.container-fluid -->*/}
