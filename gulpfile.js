@@ -25,7 +25,7 @@ gulp.task('scss', function() {
 			}))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('css'))
-})
+});
 
 
 gulp.task('default', ['scss'], function() {
